@@ -483,8 +483,8 @@
     <string name="day_off_today">Closed today</string>
     <string name="day_off">Closed</string>
     <string name="today">Today</string>
-    <string name="opens_in">Opens in %s</string>
-    <string name="closes_in">Closes in %s</string>
+    <string name="opens_in">Opening in %s</string>
+    <string name="closes_in">Closing in %s</string>
     <string name="closed">Closed</string>
     <string name="edit_opening_hours">Edit business hours</string>
     <string name="no_osm_account">Don\'t have an OpenStreetMap account?</string>
@@ -944,4 +944,6 @@
     <string name="ruler">Ruler</string>
     <string name="bookmark_color">Bookmark color</string>
     <string name="about_help">About &amp; Help</string>
+    <string name="open_now">Open now</string>
+    <string name="closed_now">Closed now</string>
 </resources>
