@@ -360,6 +360,7 @@ area|z15-[amenity=kindergarten],
 area|z15-[amenity=college],
 area|z15-[amenity=school],
 area|z15-[landuse=education],
+area|z15-[landuse=retail],
 area|z16-[public_transport=platform],
 area|z16-[railway=platform],
 area|z15-[leisure=playground],
@@ -392,6 +393,9 @@ area|z15-[amenity=school],
 area|z15-[amenity=kindergarten],
 area|z15-[landuse=education],
 {fill-color: @university;}
+
+area|z15-[landuse=retail],
+{fill-color: @retail;}
 
 area|z15-[leisure=pitch],
 area|z15-[leisure=track][area?],
