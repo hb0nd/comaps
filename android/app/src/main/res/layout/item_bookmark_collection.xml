@@ -18,7 +18,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
-    <TextView
+    <com.google.android.material.textview.MaterialTextView
       android:id="@+id/name"
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
@@ -28,7 +28,7 @@
       android:singleLine="true"
       android:textAppearance="?fontBody1"
       tools:text="Bookmark name looooooooooooooooooongasdasdasd" />
-    <TextView
+    <com.google.android.material.textview.MaterialTextView
       android:id="@+id/size"
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
