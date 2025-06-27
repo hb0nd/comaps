@@ -340,8 +340,11 @@ Java_app_organicmaps_editor_OpeningHours_nativeCurrentState(JNIEnv * env, jclass
       {RuleState::Unknown, "Unknown"}
   };
 
-  jfieldID stateField = env->GetStaticFieldID(ruleStateClass, stateNames.at(ohInfo.state), "Lapp/organicmaps/editor/OhState$RuleState;");
-  jobject stateObj = env->GetStaticObjectField(ruleStateClass, stateField);
+    jmethodID valueOf = env->GetStaticMethodID(ruleStateClass, "valueOf","(Ljava/lang/String;)Lapp/organicmaps/editor/OhState$RuleState;");
+    jstring jName = env->NewStringUTF(stateNames.at(ohInfo.state));
+    jobject stateObj = env->CallStaticObjectMethod(ruleStateClass, valueOf, jName);
+    env->DeleteLocalRef(jName);
+
   jmethodID constructor = env->GetMethodID(ohStateClass, "<init>", "(Lapp/organicmaps/editor/OhState$RuleState;JJ)V");
   jobject javaOhState = env->NewObject(ohStateClass, constructor, stateObj, (jlong) ohInfo.nextTimeOpen, (jlong) ohInfo.nextTimeClosed);
 
