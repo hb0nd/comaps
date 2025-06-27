@@ -9,11 +9,11 @@ Any commit needs a helpful message. Mind the following guidelines when committin
    - [android]
    - [ios]
    - [qt]
+   - [styles]
    - [search]
    - [generator]
    - [strings]
    - [platform]
-   - [storage]
    - [transit]
    - [routing]
    - [bookmarks]
@@ -23,20 +23,19 @@ Any commit needs a helpful message. Mind the following guidelines when committin
    - See `git log --oneline|egrep -o '\[[0-9a-z]*\]'|sort|uniq -c|sort -nr|less` for ideas.
 
 4. Start a sentence with a capital letter.
-5. Do not end the subject line with a period.
-6. Do not put "gh-xx", "closes #xxx" in the subject line.
-7. Use the imperative mood in the subject line.
+5. Do not put "cd-xx", "closes #xxx" in the subject line.
+6. Use the imperative mood in the subject line.
 
    - A properly formed Git commit subject line should always be able to complete
      the following sentence: "If applied, this commit will _/your subject line here/_".
 
-8. Wrap the body to **72 characters** or so.
-9. Use the body to explain **what and why** vs. how.
-10. Link Codeberg issues on the last lines:
+7. Wrap the body to **72 characters** or so.
+8. Use the body to explain **what and why** vs. how.
+9. Link Codeberg issues on the last lines:
 
     - [See tutorial](https://forgejo.org/docs/latest/user/linked-references/).
 
-11. Use your real name and real email address.
+10. Use your real name and real email address.
 
     - See also [Developer's Certificate of Origin](DCO.md)
 
@@ -49,22 +48,11 @@ A template:
     Wrap it to 72 characters or so.
     In some contexts, the first line is treated as the subject of the
     commit, and the rest of the text as the body.
-    The blank line separating the summary from the body is critical
-    (unless you omit the body entirely); various tools like `log`,
-    `shortlog` and `rebase` can get confused if you run the two together.
 
     Explain the problem that this commit is solving. Focus on why you
     are making this change as opposed to how (the code explains that).
     Are there side effects or other unintuitive consequences of this
     change? Here's the place to explain them.
-
-    Further paragraphs come after blank lines.
-
-    - Bullet points are okay, too.
-
-    - Typically a hyphen or asterisk is used for the bullet, preceded
-      by a single space, with blank lines in between, but conventions
-      vary here.
 
     Fixes: #123
     Closes: #456
